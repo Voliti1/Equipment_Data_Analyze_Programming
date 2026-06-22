@@ -1,0 +1,26 @@
+{
+    "name": "과제 마감 리마인더",
+    "flow": [
+        {
+            "id": 1,
+            "module": "google-email:ActionSendEmail",
+            "version": 1,
+            "parameters": {
+                "account": "__GMAIL_연결__"
+            },
+            "mapper": {
+                "to": [
+                    "수강생이메일@gmail.com"
+                ],
+                "subject": "[과제 마감 안내] 내일까지 제출해 주세요!",
+                "html": "<div style='font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;'><h2 style='color: #5B21B6;'>📚 과제 마감 안내</h2><p>안녕하세요, 담당 교수입니다.</p><p>아래 과제의 <strong>제출 마감일이 내일</strong>입니다.</p><table style='width: 100%; border-collapse: collapse; margin: 16px 0;'><tr style='background: #F3E8FF;'><td style='padding: 12px; border: 1px solid #DDD; font-weight: bold;'>과목명</td><td style='padding: 12px; border: 1px solid #DDD;'>노코드 자동화 실습</td></tr><tr><td style='padding: 12px; border: 1px solid #DDD; font-weight: bold;'>과제명</td><td style='padding: 12px; border: 1px solid #DDD;'>Make 시나리오 만들기</td></tr><tr style='background: #F3E8FF;'><td style='padding: 12px; border: 1px solid #DDD; font-weight: bold;'>마감일</td><td style='padding: 12px; border: 1px solid #DDD; color: #DC2626; font-weight: bold;'>2026년 7월 18일 (금) 23:59</td></tr><tr><td style='padding: 12px; border: 1px solid #DDD; font-weight: bold;'>제출 방법</td><td style='padding: 12px; border: 1px solid #DDD;'>LMS 과제 게시판에 업로드</td></tr></table><p>기한 내 미제출 시 감점 처리되오니 꼭 제출해 주세요.</p><p style='margin-top: 24px;'>감사합니다.<br><strong>담당 교수 드림</strong></p></div>",
+                "cc": [],
+                "bcc": []
+            }
+        }
+    ],
+    "metadata": {
+        "version": 1,
+        "instant": false
+    }
+}
